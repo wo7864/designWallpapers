@@ -12,13 +12,13 @@ export default class Wallpapers extends AbstractView {
             <h1>자 css 해보자~</h1>
             <ul>
                 <li>
-                    <a href="/ButtonAnimation1" data-link>ButtonAnimation1</a>
+                    <a href="./ButtonAnimation1" data-link>ButtonAnimation1</a>
                 </li>
                 <li>
-                    <a href="/LiquidButton" data-link>LiquidButton</a>
+                    <a href="./LiquidButton" data-link>LiquidButton</a>
                 </li>
                 <li>
-                <a href="/NeonLightButton" data-link>NeonLightButton</a>
+                <a href="./NeonLightButton" data-link>NeonLightButton</a>
             </li>
 
             </ul>

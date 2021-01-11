@@ -3,6 +3,7 @@ import ButtonAnimation1 from "./views/ButtonAnimation1.js";
 import LiquidButton from "./views/LiquidButton.js";
 import NeonLightButton from "./views/NeonLightButton.js";
 
+
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
 
 const router = async () => {
@@ -31,8 +32,8 @@ const router = async () => {
     const view = new match.route.view(getParams(match));
     const link = document.querySelector("#detail-css");
 
-    link.href = `/static/css/${view.name}.css`;
-        document.querySelector("#app").innerHTML = await view.getHtml();
+    document.querySelector("#detail-css").href = `/static/style/${view.name}.css`;
+    document.querySelector("#app").innerHTML = await view.getHtml();
 }
 
 const routeAnimation = () => {
@@ -52,6 +53,7 @@ const routeAnimation = () => {
 
 
 const navigateTo = (url) => {
+    console.log(url);
     history.pushState(null, null, url);
     routeAnimation();
     setTimeout(()=> {
